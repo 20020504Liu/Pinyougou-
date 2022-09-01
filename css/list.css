@@ -1,0 +1,225 @@
+/* 列表页专有的CSS */
+
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    /* line-height: 47px; */
+    /* 行高大于高度文字偏下 */
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    float: left;
+    width: 289px;
+    height: 469px;
+    margin-right: 14px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:nth-child(n+5) {
+    margin-top: 14px;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+
+.sk_bd ul li img {
+    width: 100%;
+}
+
+.sk_bd ul li .xiangxi {
+    padding: 12px;
+    height: 130px;
+
+}
+
+.xiangxi p {
+    font-size: 14px;
+    color: #666;
+}
+
+.xiangxi span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.xiangxi i {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #a4a4a4;
+}
+
+.xiangxi .jindu {
+    position: relative;
+    left: 60px;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+
+.xiangxi .jindu .mini {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 116px;
+    height: 100%;
+    background-color: #ed282e;
+}
+
+.xiangxi .jindu::before {
+    position: absolute;
+    top: -5px;
+    left: -60px;
+    content: '已售87%';
+    font-size: 12px;
+    color: #666;
+}
+
+.xiangxi .jindu::after {
+    position: absolute;
+    right: -66px;
+    top: -5px;
+    content: '剩余29件';
+    font-size: 12px;
+    color: #666;
+}
+
+.anniu {
+    display: block;
+    width: 288px;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.anniu:hover {
+    color: #fff;
+}
+
+.page {
+    text-align: center;
+    margin: 40px auto;
+    /* 里面的文字内容 行内块 行内元素 都可以居中对齐 */
+}
+
+.page_num a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7ff;
+    line-height: 36px;
+}
+
+.page_num a:first-child,
+.page_num a:last-child {
+    width: 83px;
+}
+
+.page_num .dotted,
+.page_num .current {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.page_skip input {
+    border: 1px solid #ccc;
+    width: 46px;
+    height: 36px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+/* 焦点选择器  */
+.page_skip input:focus {
+    width: 88px;
+    border: 1px solid #c81623;
+}
+
+.page_skip button {
+    width: 54px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7ff;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+#backTop {
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 200px;
+    right: 50%;
+    margin-right: -700px;
+    border-radius: 18px;
+    background: url(../images/icons.png) no-repeat -320px -58px;
+}
+
+#backTop li {
+    display: none;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 18px;
+    background-color: #c81623;
+    border: 1px solid #c81623;
+}

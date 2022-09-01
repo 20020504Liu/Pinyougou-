@@ -1,0 +1,88 @@
+section {
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 175px;
+}
+
+#search {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    width: 700px;
+    height: 60px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    z-index: 1;
+    outline: none;
+}
+
+#search input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 570px;
+    height: 100%;
+    font-size: 18px;
+}
+
+#search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 126px;
+    height: 100%;
+    font-size: 18px;
+    /* display: none; */
+}
+
+#boxlist {
+    position: absolute;
+    top: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 695px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#suggest-list {
+    display: none;
+
+}
+
+.suggest-item {
+    line-height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.suggest-item:nth-child(1) {
+    padding-top: 3px;
+}
+
+.suggest-item:hover {
+    cursor: pointer;
+    color: #c81623;
+}
+
+/* 清除谷歌浏览器下的 search 叉号  */
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* --清除IE下的 search 叉号  */
+input[type=search]::-ms-clear {
+    display: none;
+}

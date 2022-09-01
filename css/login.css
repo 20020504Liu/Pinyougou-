@@ -1,0 +1,141 @@
+.body {
+    height: 500px;
+    width: 100%;
+    background: url(../images/loginbg.png) no-repeat;
+}
+
+.body_mode {
+    position: relative;
+    height: 100%;
+}
+
+.login {
+    position: absolute;
+    top: 60px;
+    right: 115px;
+    width: 380px;
+    height: 360px;
+    background-color: #fff;
+}
+
+.login_hd {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.login_hd i {
+    position: absolute;
+    top: 15px;
+    display: block;
+    width: 170px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.login_hd i:first-child {
+    left: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.login_hd i:last-child {
+    right: 20px;
+}
+
+.login_hd .current {
+    color: #c81623;
+}
+
+.login_note {
+    position: absolute;
+    top: 63px;
+    left: 38px;
+    width: 303px;
+    height: 24px;
+    border: 1px solid #f5eecf;
+    background-color: #fffdee;
+    line-height: 22px;
+    padding-left: 10px;
+}
+
+.user,
+.pwd {
+    position: absolute;
+    top: 100px;
+    left: 38px;
+    width: 303px;
+    height: 35px;
+    border: 1px solid #3aa2e4;
+    overflow: hidden;
+}
+
+.pwd {
+    top: 152px;
+}
+
+.user span,
+.pwd span {
+    display: inline-block;
+    width: 37px;
+    height: 34px;
+    background: url(../images/login_user.png);
+}
+
+.pwd span {
+    background: url(../images/login_pwd.png);
+}
+
+.user input,
+.pwd input {
+    float: right;
+    height: 100%;
+    width: 264px;
+    padding-left: 10px;
+    color: #666;
+}
+
+.tips {
+    position: absolute;
+    left: 38px;
+    top: 205px;
+    width: 303px;
+    vertical-align: middle;
+}
+
+.tips span img {
+    margin-right: 5px;
+}
+
+.tips span:last-child {
+    position: absolute;
+    right: 8px;
+    color: #333;
+}
+
+.login_anniu {
+    position: absolute;
+    top: 242px;
+    left: 38px;
+    display: block;
+    width: 303px;
+    height: 40px;
+    background-color: #c81623;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+}
+
+.add {
+    position: absolute;
+    top: 295px;
+    left: 20px;
+    width: 312px;
+    vertical-align: middle;
+}
+
+.add a {
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
